@@ -25,7 +25,7 @@ def update_saude_pet(
         saude = model.SaudePet(pet_id=pet_id)
         db.add(saude)
     
-    # Atualiza apenas os campos fornecidos, acumulando texto
+    # Atualiza apenas os campos fornecidos
     if update.vacinas is not None:
         saude.vacinas = update.vacinas
     if update.medicamentos is not None:
