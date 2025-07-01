@@ -37,6 +37,7 @@ Petto/
 ├── venv/                     # Ambiente virtual Python
 ├── .env                      # Variáveis de ambiente (produção)
 ├── .env.example              # Exemplo de variáveis de ambiente
+├── Procfile                  # Configuração para hospedar
 ├── alembic.ini               # Configuração do Alembic
 ├── main.py                   # Ponto de entrada da aplicação
 ├── petto.db                  # Banco de dados SQLite
