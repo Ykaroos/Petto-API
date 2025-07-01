@@ -54,8 +54,6 @@ def get_user_pets(user_id: int, db: Session = Depends(get_db)):
     pets = db.query(model.Pet).filter(model.Pet.id_usuario == user_id).all()
     return pets
 
-# =================== NOVO ENDPOINT LOGIN ===================
-
 @router.post("/login")
 def login(login_data: LoginRequest, db: Session = Depends(get_db)):
     user = db.query(model.Usuario).filter(model.Usuario.email == login_data.email).first()
@@ -63,7 +61,6 @@ def login(login_data: LoginRequest, db: Session = Depends(get_db)):
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Usuário ou senha inválidos")
     return {"msg": "Login realizado com sucesso", "user_id": user.id_usuario, "nome": user.nome}
 
-# =================== NOVO ENDPOINT VERIFICAR EMAIL ===================
 @router.post("/verificar-email")
 def verificar_email(data: EmailSchema, db: Session = Depends(get_db)):
     email = data.email
