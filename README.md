@@ -4,6 +4,9 @@ Um sistema de gerenciamento de pets, com autenticação de usuários, registros 
 ---
 ## 📁 Estrutura do Projeto
 
+# Documento da API
+[Acesse o documento](https://docs.google.com/document/d/1N_LAL551B9kl4XWi_Yiv5tFOagwLLCbZYqsZEi5Ed9g/edit?usp=sharing)
+
 ```
 Petto/
 │
